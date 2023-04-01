@@ -12,12 +12,10 @@ const message = {
         return randZodiac;
     },
     randWords() {
-        // const randNum = Math.floor(Math.random() * this.words.length);
         const randWords = this.words[this.randNum(this.words)];
         return randWords;
     },
     randFriends() {
-        // const randNum = Math.floor(Math.random() * this.friends.length);
         const randFriends = this.friends[this.randNum(this.friends)];
         return randFriends;
     },
