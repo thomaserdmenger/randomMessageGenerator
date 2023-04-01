@@ -4,7 +4,6 @@ const message = {
     zodiac: ['ram', 'bull', 'twins', 'crab', 'lion', 'virgin', 'balance', 'scorpion', 'archer', 'goat', 'water bearer', 'fish'],
     words: ['agile', 'energetic', 'cheeky', 'smart', 'foolish', 'quiet', 'lazy', 'tired', 'hungry'],
     friends: ['loved', 'hated', 'missed', 'feeded', 'kicked', 'punshed', 'instructed'],
-    // Add Function to get random number
     randNum(arr) {
         return Math.floor(Math.random() * arr.length);
     },
