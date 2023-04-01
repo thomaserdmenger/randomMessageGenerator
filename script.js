@@ -4,19 +4,22 @@ const message = {
     zodiac: ['ram', 'bull', 'twins', 'crab', 'lion', 'virgin', 'balance', 'scorpion', 'archer', 'goat', 'water bearer', 'fish'],
     words: ['agile', 'energetic', 'cheeky', 'smart', 'foolish', 'quiet', 'lazy', 'tired', 'hungry'],
     friends: ['loved', 'hated', 'missed', 'feeded', 'kicked', 'punshed', 'instructed'],
+    // Add Function to get random number
+    randNum(arr) {
+        return Math.floor(Math.random() * arr.length);
+    },
     ranZodiac() {
-        const randNum = Math.floor(Math.random() * this.zodiac.length);
-        const randZodiac = this.zodiac[randNum];
+        const randZodiac = this.zodiac[this.randNum(this.zodiac)];
         return randZodiac;
     },
     randWords() {
-        const randNum = Math.floor(Math.random() * this.words.length);
-        const randWords = this.words[randNum];
+        // const randNum = Math.floor(Math.random() * this.words.length);
+        const randWords = this.words[this.randNum(this.words)];
         return randWords;
     },
     randFriends() {
-        const randNum = Math.floor(Math.random() * this.friends.length);
-        const randFriends = this.friends[randNum];
+        // const randNum = Math.floor(Math.random() * this.friends.length);
+        const randFriends = this.friends[this.randNum(this.friends)];
         return randFriends;
     },
     randMessage() {
